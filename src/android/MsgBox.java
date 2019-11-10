@@ -46,12 +46,13 @@ public class MsgBox {
             builder.setMessage(msgHelper.getString(MsgHelper.UPDATE_MESSAGE));
             // 更新
             builder.setPositiveButton(msgHelper.getString(MsgHelper.UPDATE_UPDATE_BTN), onClickListener);
+            builder.setNegativeButton("取消", null);
             noticeDialog = builder.create();
         }
 
         if (!noticeDialog.isShowing()) noticeDialog.show();
 
-        noticeDialog.setCanceledOnTouchOutside(false);// 设置点击屏幕Dialog不消失
+        noticeDialog.setCanceledOnTouchOutside(true);
         return noticeDialog;
     }
 
