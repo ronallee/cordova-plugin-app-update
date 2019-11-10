@@ -4,6 +4,10 @@
 
 [![NPM](https://nodei.co/npm/cordova-plugin-app-update.png?downloads=true&downloadRank=true)](https://nodei.co/npm/cordova-plugin-app-update/)
 
+# 说明
+forked from vaenow/cordova-plugin-app-update，根据自己的需求进行改动
+
+
 # cordova-plugin-app-update
 App updater for Cordova/PhoneGap
 
