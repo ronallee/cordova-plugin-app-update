@@ -71,7 +71,8 @@ public class DownloadHandler extends Handler {
     public void updateMsgDialog() {
         mDownloadDialog.setTitle(msgHelper.getString(MsgHelper.DOWNLOAD_COMPLETE_TITLE));
         if (mDownloadDialog.isShowing()) {
-            mDownloadDialog.getButton(DialogInterface.BUTTON_NEGATIVE).setVisibility(View.GONE); //Update in background
+            mDownloadDialog.getButton(DialogInterface.BUTTON_NEGATIVE).setText("取消");
+//            mDownloadDialog.getButton(DialogInterface.BUTTON_NEGATIVE).setVisibility(View.GONE); //Update in background
             mDownloadDialog.getButton(DialogInterface.BUTTON_NEUTRAL).setVisibility(View.VISIBLE); //Install Manually
             mDownloadDialog.getButton(DialogInterface.BUTTON_POSITIVE).setVisibility(View.VISIBLE); //Download Again
 

@@ -91,6 +91,7 @@ public class MsgBox {
         downloadDialog.setTitle(msgHelper.getString(MsgHelper.UPDATING));
         downloadDialog.setCanceledOnTouchOutside(false);// 设置点击屏幕Dialog不消失
         if (downloadDialog.isShowing()) {
+            downloadDialog.getButton(DialogInterface.BUTTON_NEGATIVE).setText(msgHelper.getString(MsgHelper.UPDATE_BG));
             downloadDialog.getButton(DialogInterface.BUTTON_NEGATIVE).setVisibility(View.VISIBLE); //Update in background
             downloadDialog.getButton(DialogInterface.BUTTON_NEUTRAL).setVisibility(View.GONE); //Install Manually
             downloadDialog.getButton(DialogInterface.BUTTON_POSITIVE).setVisibility(View.GONE); //Download Again
